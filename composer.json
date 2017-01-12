@@ -1,0 +1,39 @@
+{
+    "name": "mvdstam/graceful-laravel-workers",
+    "description": "Provides a way to stop Laravel Worker daemons (and jobs) gracefully.",
+    "authors": [
+        {
+            "name": "Max van der Stam",
+            "email": "max@vanderstam.nl"
+        }
+    ],
+    "keywords": [
+        "laravel",
+        "queue",
+        "workers",
+        "graceful"
+    ],
+    "require": {
+        "ext-pcntl": "*",
+        "php": ">=5.6.0",
+        "illuminate/queue": ">=5.0 <5.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7",
+        "mockery/mockery": "^0.9.7",
+        "orchestra/testbench": "^3.2"
+    },
+    "autoload": {
+      "psr-4": {
+          "Mvdstam\\GracefulLaravelWorkers\\": "src"
+      },
+      "files": ["src/helpers.php"]
+    },
+    "autoload-dev": {
+      "psr-4": {
+          "Mvdstam\\GracefulLaravelWorkers\\Tests\\": "tests"
+      }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
