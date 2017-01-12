@@ -7,7 +7,7 @@ In Laravel and Lumen-based applications, this is possible through the use of the
 This package expands a little bit upon that component by making it possible to *gracefully* stop Workers (or any kind of process for that matter) through the use of [Posix Signals](https://en.wikipedia.org/wiki/Unix_signal).
 This also enables your queue workers to be run inside of [Docker containers](https://www.docker.com/) and be stopped in a graceful and clean way, since Docker utilizes posix signals to stop running containers when, for example, updating them.
 
-Finally, gracefully cleaning up running processes is a crucial part of any (12-factor application)[https://12factor.net/].
+Finally, gracefully cleaning up running processes is a crucial part of any [12-factor application](https://12factor.net/).
 
 ### Why is this important?
 When a queue worker is started through `php artisan queue:work --daemon`, a *long-running* PHP process is started.
