@@ -2,7 +2,7 @@
 
 namespace Mvdstam\GracefulLaravelWorkers;
 
-if (!function_exists('shutting_down')) {
+if (!function_exists(__NAMESPACE__ . '\\shutting_down')) {
     /**
      * Stateful function which can be used in conjunction
      * with signal handling, so the application has a clean
